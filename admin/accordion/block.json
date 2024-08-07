@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "alpha/accordion",
+  "version": "0.1.0",
+  "title": "Accordion",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Example Accordion with Create Block tool.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "alpha",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

@@ -1,0 +1,17 @@
+{
+  "cSpell.words": ["alpb", "CCOP", "CFEW", "tailwindcss"],
+  "[php]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "valeryanm.vscode-phpsab"
+  },
+  "[html]": {
+    "editor.formatOnSave": true
+  },
+  //   "[javascript]": {
+  //     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  //   },
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  }
+}

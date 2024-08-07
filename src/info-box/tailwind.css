@@ -1,0 +1,9 @@
+.wp-block-alpb-info-box {
+	background-color: #944f4f;
+	color: #fff;
+	padding: 2px;
+	border: 10px solid rgb(243, 142, 10);		
+	@tailwind base;
+  @tailwind components;
+  @tailwind utilities;	
+}

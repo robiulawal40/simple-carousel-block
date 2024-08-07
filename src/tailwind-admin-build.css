@@ -1,0 +1,857 @@
+/*
+! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
+*/
+  /*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+  .alpb_plugin *,
+.alpb_plugin ::before,
+.alpb_plugin ::after {
+    box-sizing: border-box;
+    /* 1 */
+    border-width: 0;
+    /* 2 */
+    border-style: solid;
+    /* 2 */
+    border-color: #e5e7eb;
+    /* 2 */
+  }
+  .alpb_plugin ::before,
+.alpb_plugin ::after {
+    --tw-content: '';
+  }
+  /*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+  .alpb_plugin html,
+.alpb_plugin :host {
+    line-height: 1.5;
+    /* 1 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+    -moz-tab-size: 4;
+    /* 3 */
+    -o-tab-size: 4;
+       tab-size: 4;
+    /* 3 */
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /* 4 */
+    font-feature-settings: normal;
+    /* 5 */
+    font-variation-settings: normal;
+    /* 6 */
+    -webkit-tap-highlight-color: transparent;
+    /* 7 */
+  }
+  /*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+  .alpb_plugin body {
+    margin: 0;
+    /* 1 */
+    line-height: inherit;
+    /* 2 */
+  }
+  /*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+  .alpb_plugin hr {
+    height: 0;
+    /* 1 */
+    color: inherit;
+    /* 2 */
+    border-top-width: 1px;
+    /* 3 */
+  }
+  /*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+  .alpb_plugin abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted;
+  }
+  /*
+Remove the default font size and weight for headings.
+*/
+  .alpb_plugin h1,
+.alpb_plugin h2,
+.alpb_plugin h3,
+.alpb_plugin h4,
+.alpb_plugin h5,
+.alpb_plugin h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  /*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+  .alpb_plugin a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+  /*
+Add the correct font weight in Edge and Safari.
+*/
+  .alpb_plugin b,
+.alpb_plugin strong {
+    font-weight: bolder;
+  }
+  /*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+  .alpb_plugin code,
+.alpb_plugin kbd,
+.alpb_plugin samp,
+.alpb_plugin pre {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    /* 1 */
+    font-feature-settings: normal;
+    /* 2 */
+    font-variation-settings: normal;
+    /* 3 */
+    font-size: 1em;
+    /* 4 */
+  }
+  /*
+Add the correct font size in all browsers.
+*/
+  .alpb_plugin small {
+    font-size: 80%;
+  }
+  /*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+  .alpb_plugin sub,
+.alpb_plugin sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  .alpb_plugin sub {
+    bottom: -0.25em;
+  }
+  .alpb_plugin sup {
+    top: -0.5em;
+  }
+  /*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+  .alpb_plugin table {
+    text-indent: 0;
+    /* 1 */
+    border-color: inherit;
+    /* 2 */
+    border-collapse: collapse;
+    /* 3 */
+  }
+  /*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+  .alpb_plugin button,
+.alpb_plugin input,
+.alpb_plugin optgroup,
+.alpb_plugin select,
+.alpb_plugin textarea {
+    font-family: inherit;
+    /* 1 */
+    font-feature-settings: inherit;
+    /* 1 */
+    font-variation-settings: inherit;
+    /* 1 */
+    font-size: 100%;
+    /* 1 */
+    font-weight: inherit;
+    /* 1 */
+    line-height: inherit;
+    /* 1 */
+    color: inherit;
+    /* 1 */
+    margin: 0;
+    /* 2 */
+    padding: 0;
+    /* 3 */
+  }
+  /*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+  .alpb_plugin button,
+.alpb_plugin select {
+    text-transform: none;
+  }
+  /*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+  .alpb_plugin button,
+.alpb_plugin [type='button'],
+.alpb_plugin [type='reset'],
+.alpb_plugin [type='submit'] {
+    -webkit-appearance: button;
+    /* 1 */
+    background-color: transparent;
+    /* 2 */
+    background-image: none;
+    /* 2 */
+  }
+  /*
+Use the modern Firefox focus style for all focusable elements.
+*/
+  .alpb_plugin :-moz-focusring {
+    outline: auto;
+  }
+  /*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+  .alpb_plugin :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  /*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+  .alpb_plugin progress {
+    vertical-align: baseline;
+  }
+  /*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+  .alpb_plugin ::-webkit-inner-spin-button,
+.alpb_plugin ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  /*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+  .alpb_plugin [type='search'] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    outline-offset: -2px;
+    /* 2 */
+  }
+  /*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+  .alpb_plugin ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  /*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+  .alpb_plugin ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    /* 1 */
+    font: inherit;
+    /* 2 */
+  }
+  /*
+Add the correct display in Chrome and Safari.
+*/
+  .alpb_plugin summary {
+    display: list-item;
+  }
+  /*
+Removes the default spacing and border for appropriate elements.
+*/
+  .alpb_plugin blockquote,
+.alpb_plugin dl,
+.alpb_plugin dd,
+.alpb_plugin h1,
+.alpb_plugin h2,
+.alpb_plugin h3,
+.alpb_plugin h4,
+.alpb_plugin h5,
+.alpb_plugin h6,
+.alpb_plugin hr,
+.alpb_plugin figure,
+.alpb_plugin p,
+.alpb_plugin pre {
+    margin: 0;
+  }
+  .alpb_plugin fieldset {
+    margin: 0;
+    padding: 0;
+  }
+  .alpb_plugin legend {
+    padding: 0;
+  }
+  .alpb_plugin ol,
+.alpb_plugin ul,
+.alpb_plugin menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  /*
+Reset default styling for dialogs.
+*/
+  .alpb_plugin dialog {
+    padding: 0;
+  }
+  /*
+Prevent resizing textareas horizontally by default.
+*/
+  .alpb_plugin textarea {
+    resize: vertical;
+  }
+  /*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+  .alpb_plugin input::-moz-placeholder, .alpb_plugin textarea::-moz-placeholder {
+    opacity: 1;
+    /* 1 */
+    color: #9ca3af;
+    /* 2 */
+  }
+  .alpb_plugin input::placeholder,
+.alpb_plugin textarea::placeholder {
+    opacity: 1;
+    /* 1 */
+    color: #9ca3af;
+    /* 2 */
+  }
+  /*
+Set the default cursor for buttons.
+*/
+  .alpb_plugin button,
+.alpb_plugin [role="button"] {
+    cursor: pointer;
+  }
+  /*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+  .alpb_plugin :disabled {
+    cursor: default;
+  }
+  /*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+  .alpb_plugin img,
+.alpb_plugin svg,
+.alpb_plugin video,
+.alpb_plugin canvas,
+.alpb_plugin audio,
+.alpb_plugin iframe,
+.alpb_plugin embed,
+.alpb_plugin object {
+    display: block;
+    /* 1 */
+    vertical-align: middle;
+    /* 2 */
+  }
+  /*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+  .alpb_plugin img,
+.alpb_plugin video {
+    max-width: 100%;
+    height: auto;
+  }
+  /* Make elements with the HTML hidden attribute stay hidden by default */
+  .alpb_plugin [hidden] {
+    display: none;
+  }
+  .alpb_plugin *, .alpb_plugin ::before, .alpb_plugin ::after {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  ;
+  }
+  .alpb_plugin ::backdrop {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x:  ;
+    --tw-pan-y:  ;
+    --tw-pinch-zoom:  ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-gradient-from-position:  ;
+    --tw-gradient-via-position:  ;
+    --tw-gradient-to-position:  ;
+    --tw-ordinal:  ;
+    --tw-slashed-zero:  ;
+    --tw-numeric-figure:  ;
+    --tw-numeric-spacing:  ;
+    --tw-numeric-fraction:  ;
+    --tw-ring-inset:  ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur:  ;
+    --tw-brightness:  ;
+    --tw-contrast:  ;
+    --tw-grayscale:  ;
+    --tw-hue-rotate:  ;
+    --tw-invert:  ;
+    --tw-saturate:  ;
+    --tw-sepia:  ;
+    --tw-drop-shadow:  ;
+    --tw-backdrop-blur:  ;
+    --tw-backdrop-brightness:  ;
+    --tw-backdrop-contrast:  ;
+    --tw-backdrop-grayscale:  ;
+    --tw-backdrop-hue-rotate:  ;
+    --tw-backdrop-invert:  ;
+    --tw-backdrop-opacity:  ;
+    --tw-backdrop-saturate:  ;
+    --tw-backdrop-sepia:  ;
+  }
+  .alpb_plugin .container {
+    width: 100%;
+  }
+  @media (min-width: 640px) {
+    .alpb_plugin .container {
+      max-width: 640px;
+    }
+  }
+  @media (min-width: 768px) {
+    .alpb_plugin .container {
+      max-width: 768px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .alpb_plugin .container {
+      max-width: 1024px;
+    }
+  }
+  @media (min-width: 1280px) {
+    .alpb_plugin .container {
+      max-width: 1280px;
+    }
+  }
+  @media (min-width: 1536px) {
+    .alpb_plugin .container {
+      max-width: 1536px;
+    }
+  }
+  .alpb_plugin .static {
+    position: static;
+  }
+  .alpb_plugin .absolute {
+    position: absolute;
+  }
+  .alpb_plugin .relative {
+    position: relative;
+  }
+  .alpb_plugin .bottom-5 {
+    bottom: 1.25rem;
+  }
+  .alpb_plugin .m-3 {
+    margin: 0.75rem;
+  }
+  .alpb_plugin .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .alpb_plugin .my-5 {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .alpb_plugin .mb-16 {
+    margin-bottom: 4rem;
+  }
+  .alpb_plugin .mb-5 {
+    margin-bottom: 1.25rem;
+  }
+  .alpb_plugin .ml-auto {
+    margin-left: auto;
+  }
+  .alpb_plugin .mr-auto {
+    margin-right: auto;
+  }
+  .alpb_plugin .mt-2 {
+    margin-top: 0.5rem;
+  }
+  .alpb_plugin .mt-3 {
+    margin-top: 0.75rem;
+  }
+  .alpb_plugin .mt-5 {
+    margin-top: 1.25rem;
+  }
+  .alpb_plugin .block {
+    display: block;
+  }
+  .alpb_plugin .flex {
+    display: flex;
+  }
+  .alpb_plugin .table {
+    display: table;
+  }
+  .alpb_plugin .grid {
+    display: grid;
+  }
+  .alpb_plugin .contents {
+    display: contents;
+  }
+  .alpb_plugin .hidden {
+    display: none;
+  }
+  .alpb_plugin .h-10 {
+    height: 2.5rem;
+  }
+  .alpb_plugin .h-full {
+    height: 100%;
+  }
+  .alpb_plugin .w-10 {
+    width: 2.5rem;
+  }
+  .alpb_plugin .w-2\/3 {
+    width: 66.666667%;
+  }
+  .alpb_plugin .w-full {
+    width: 100%;
+  }
+  .alpb_plugin .transform {
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .alpb_plugin .cursor-pointer {
+    cursor: pointer;
+  }
+  .alpb_plugin .columns-1 {
+    -moz-columns: 1;
+         columns: 1;
+  }
+  .alpb_plugin .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .alpb_plugin .flex-col {
+    flex-direction: column;
+  }
+  .alpb_plugin .items-center {
+    align-items: center;
+  }
+  .alpb_plugin .justify-center {
+    justify-content: center;
+  }
+  .alpb_plugin .gap-4 {
+    gap: 1rem;
+  }
+  .alpb_plugin .gap-8 {
+    gap: 2rem;
+  }
+  .alpb_plugin .rounded-full {
+    border-radius: 9999px;
+  }
+  .alpb_plugin .rounded-md {
+    border-radius: 0.375rem;
+  }
+  .alpb_plugin .border {
+    border-width: 1px;
+  }
+  .alpb_plugin .border-blue-400 {
+    --tw-border-opacity: 1;
+    border-color: rgb(96 165 250 / var(--tw-border-opacity));
+  }
+  .alpb_plugin .border-red-400 {
+    --tw-border-opacity: 1;
+    border-color: rgb(248 113 113 / var(--tw-border-opacity));
+  }
+  .alpb_plugin .border-teal-400 {
+    --tw-border-opacity: 1;
+    border-color: rgb(45 212 191 / var(--tw-border-opacity));
+  }
+  .alpb_plugin .bg-blue-300 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(147 197 253 / var(--tw-bg-opacity));
+  }
+  .alpb_plugin .bg-gray-100 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  }
+  .alpb_plugin .bg-gray-200 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  }
+  .alpb_plugin .bg-red-300 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+  }
+  .alpb_plugin .bg-teal-300 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(94 234 212 / var(--tw-bg-opacity));
+  }
+  .alpb_plugin .bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+  .alpb_plugin .p-2 {
+    padding: 0.5rem;
+  }
+  .alpb_plugin .p-3 {
+    padding: 0.75rem;
+  }
+  .alpb_plugin .p-5 {
+    padding: 1.25rem;
+  }
+  .alpb_plugin .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .alpb_plugin .px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .alpb_plugin .py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .alpb_plugin .py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  .alpb_plugin .pb-4 {
+    padding-bottom: 1rem;
+  }
+  .alpb_plugin .pb-6 {
+    padding-bottom: 1.5rem;
+  }
+  .alpb_plugin .pl-4 {
+    padding-left: 1rem;
+  }
+  .alpb_plugin .text-center {
+    text-align: center;
+  }
+  .alpb_plugin .font-\[Raleway\] {
+    font-family: Raleway;
+  }
+  .alpb_plugin .font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+  .alpb_plugin .text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .alpb_plugin .text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  .alpb_plugin .text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .alpb_plugin .text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .alpb_plugin .font-bold {
+    font-weight: 700;
+  }
+  .alpb_plugin .font-medium {
+    font-weight: 500;
+  }
+  .alpb_plugin .font-semibold {
+    font-weight: 600;
+  }
+  .alpb_plugin .text-black {
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+  }
+  .alpb_plugin .text-blue-400 {
+    --tw-text-opacity: 1;
+    color: rgb(96 165 250 / var(--tw-text-opacity));
+  }
+  .alpb_plugin .text-gray-900 {
+    --tw-text-opacity: 1;
+    color: rgb(17 24 39 / var(--tw-text-opacity));
+  }
+  .alpb_plugin .text-indigo-700 {
+    --tw-text-opacity: 1;
+    color: rgb(67 56 202 / var(--tw-text-opacity));
+  }
+  .alpb_plugin .text-red-400 {
+    --tw-text-opacity: 1;
+    color: rgb(248 113 113 / var(--tw-text-opacity));
+  }
+  .alpb_plugin .text-slate-900 {
+    --tw-text-opacity: 1;
+    color: rgb(15 23 42 / var(--tw-text-opacity));
+  }
+  .alpb_plugin .text-teal-400 {
+    --tw-text-opacity: 1;
+    color: rgb(45 212 191 / var(--tw-text-opacity));
+  }
+  .alpb_plugin .text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+  .alpb_plugin .shadow {
+    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+  .alpb_plugin .shadow-md {
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+  .alpb_plugin .shadow-blue-200 {
+    --tw-shadow-color: #bfdbfe;
+    --tw-shadow: var(--tw-shadow-colored);
+  }
+  .alpb_plugin .shadow-gray-200 {
+    --tw-shadow-color: #e5e7eb;
+    --tw-shadow: var(--tw-shadow-colored);
+  }
+  .alpb_plugin .shadow-red-200 {
+    --tw-shadow-color: #fecaca;
+    --tw-shadow: var(--tw-shadow-colored);
+  }
+  .alpb_plugin .shadow-teal-200 {
+    --tw-shadow-color: #99f6e4;
+    --tw-shadow: var(--tw-shadow-colored);
+  }
+  .alpb_plugin .filter {
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
+  .alpb_plugin .transition {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+  .alpb_plugin .duration-300 {
+    transition-duration: 300ms;
+  }
+  .alpb_plugin .ease-in-out {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+body {
+  border: 1px solid red;
+}
+
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:text-indigo-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(99 102 241 / var(--tw-text-opacity));
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
+@media (min-width: 640px) {
+  .sm\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .xl\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark\:border-gray-700 {
+    --tw-border-opacity: 1;
+    border-color: rgb(55 65 81 / var(--tw-border-opacity));
+  }
+
+  .dark\:text-gray-100 {
+    --tw-text-opacity: 1;
+    color: rgb(243 244 246 / var(--tw-text-opacity));
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "name": "simple-carousel-block",
+  "version": "0.1.0",
+  "description": "Example block scaffolded with Create Block tool.",
+  "author": "The WordPress Contributors",
+  "license": "GPL-2.0-or-later",
+  "main": "index.js",
+  "old": {
+    "serve:html:old": "browser-sync start --server './src' --files './src'",
+    "sync:old": "browser-sync start -p 'http://localhost:8888/?page_id=2' --files '**/*.php' './src/**/*' './assets'",
+    "build:tailwind": "tailwindcss -i ./src/style.css -o ./assets/style.css --postcss --minify",
+    "watch:tailwind": "tailwindcss -i ./src/style.css -o ./assets/style.css --watch --postcss --minify"
+  },
+  "scripts": {
+    "build": "npm-run-all --sequential build:wp build:tailwind",
+    "start": "npm-run-all --sequential \"wp-env start\" start:wp",
+    "wp-env": "wp-env start",
+    "dev": "npm-run-all --sequential \"wp-env start\" preview",
+    "preview": "npm-run-all --parallel sync wpstart",
+    "proxy:wp": "browser-sync start --config bs-config.js",
+    "build:wp": "wp-scripts build",
+    "start:wp": "wp-scripts start",
+    "build:tailwind": "tailwindcss -i ./src/tailwind.css -o ./src/tailwind-build.css --postcss --minify",
+    "watch:tailwind": "tailwindcss -i ./src/tailwind.css -o ./src/tailwind-build.css --watch --postcss",
+    "watch:tailwind:logo-carousel": "tailwindcss -i ./src/logo-carousel/tailwind.css -o ./src/tailwind-logo-carousel.css --watch --postcss",
+    "build:tailwind:admin": "tailwindcss -i ./src/tailwind-admin.css -o ./assets/tailwind-admin-build.css --postcss --minify",
+    "watch:tailwind:admin": "tailwindcss -i ./src/tailwind-admin.css -o ./src/tailwind-admin-build.css --watch --postcss",
+    "serve:html": "browser-sync start --config bs-config-html.js",
+    "dev:html": "npm-run-all --parallel watch:tailwind serve:html",
+    "dev:html:logo-carousel": "npm-run-all --parallel watch:tailwind:logo-carousel serve:html",
+    "dev:html:admin": "npm-run-all --parallel watch:tailwind:admin serve:html",
+    "start:html:admin": "wp-scripts start ./src/script-admin.js --output-path=./admin",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "packages-update": "wp-scripts packages-update",
+    "plugin-zip": "wp-scripts plugin-zip",
+    "git": "git add . && git commit -m \"regular update\" && git push origin main"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^27.4.0",
+    "autoprefixer": "^10.4.14",
+    "npm-run-all": "^4.1.5",
+    "postcss-nested": "^6.0.1",
+    "tailwindcss": "^3.3.3",
+    "webpack-shell-plugin": "^0.5.0"
+  },
+  "files": [
+    "alpha_blocks.php",
+    "readme.txt",
+    "build",
+    "includes",
+    "languages"
+  ],
+  "dependencies": {
+    "browser-sync": "^2.29.3",
+    "react-icons": "^5.0.1"
+  }
+}

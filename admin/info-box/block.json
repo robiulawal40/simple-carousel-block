@@ -1,0 +1,86 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "alpha/info-box",
+  "version": "1.0.0",
+  "title": "Info Box",
+  "category": "widgets",
+  "icon": "info outline",
+  "description": "The Info Box will create.",
+  "attributes": {
+    "enableImageIcon": {
+      "type": "boolean",
+      "default": true
+    },
+    "mediaImageId": {
+      "type": "string",
+      "default": ""
+    },
+    "contents": {
+      "type": "string",
+      "source": "html",
+      "selector": ".text-content"
+    },
+    "title": {
+      "type": "string",
+      "selector": "h1",
+      "default": "Info Title"
+    },
+    "titleClass": {
+      "type": "string",
+      "default": "pb-4 text-2xl font-semibold text-center"
+    },
+    "list": {
+      "type": "array"
+    },
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": "p"
+    },
+    "alignment": {
+      "type": "string",
+      "default": "none"
+    },
+    "bg_color": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "text_color": {
+      "type": "string",
+      "default": "#ffffff"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "left",
+      "right",
+      "full"
+    ]
+  },
+  "inspectorsData": {
+    "tabs": [
+      {
+        "name": "tab1",
+        "title": "Tab 1",
+        "className": "tab-one"
+      },
+      {
+        "name": "tab2",
+        "title": "Tab 2",
+        "className": "tab-two"
+      },
+      {
+        "name": "tab3",
+        "title": "Tab 3",
+        "className": "tab-three"
+      }
+    ]
+  },
+  "textdomain": "alpha",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./admin-style.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

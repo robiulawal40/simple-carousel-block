@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../tailwind-logo-carousel.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="alpb_plugin font-mono">
+    <div class="wp-block-alpb-info-box">
+      <div
+        class="flex justify-center w-2/3 mx-auto mb-16 text-lg font-bold underline underline-offset-8"
+      >
+        Logo Carousel
+      </div>
+
+      <div class="flex justify-center w-2/3 mx-auto mb-5">
+        <div
+          id="slider"
+          class="border-red-500 block relative"
+          style="--padding-x: 16px"
+        >
+          <!--Slides-->
+          <div
+            class="mx-auto grid grid-cols-3 gap-2 px-[var(--padding-x)] py-[var(--padding-x)] w-full font-[Raleway] bg-black *:bg-[#353535] [&_div]:p-4 [&_*]:text-slate-100 [&_div]:rounded-lg [&_div]:flex [&_div]:justify-center [&_div]:items-center"
+          >
+            <div class="h-[150px]">
+              <p class="text-style-1">Team</p>
+            </div>
+
+            <div class="">
+              <h3 class="h3-style-1">Most Experienced Team</h3>
+            </div>
+
+            <div class="">
+              <h3 class="h3-style-1">Most Experienced Team</h3>
+            </div>
+          </div>
+
+          <!--Arrow-->
+          <div
+            class="absolute px-[var(--padding-x)] top-1/2 -translate-y-1/2 w-full flex justify-between [&_div]:bg-[#333] [&_div]:cursor-pointer [&_div]:rounded-full [&_div]:text-gray-50 [&_div]:border [&_div]:border-gray-900 [&_div]:p-2 [&>*:first-child]:-translate-x-1/2 [&>*:last-child]:translate-x-1/2 [&_svg]:size-3"
+          >
+            <div>
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 320 512"
+                height="200px"
+                width="200px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+                ></path>
+              </svg>
+            </div>
+            <div>
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 320 512"
+                height="200px"
+                width="200px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
