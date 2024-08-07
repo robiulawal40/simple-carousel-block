@@ -3,9 +3,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die;
 }
 
-if ( ! class_exists( 'Alpha_Blocks_Final' ) ) :
+if ( ! class_exists( 'Simple_Carousel_Blocks_Final' ) ) :
 
-	final class Alpha_Blocks_Final {
+	final class Simple_Carousel_Blocks_Final {
 
 		/**
 		 * Just a instance.
@@ -28,7 +28,7 @@ if ( ! class_exists( 'Alpha_Blocks_Final' ) ) :
 		 */
 		public static function instance() {
 			if ( is_null( self::$instance ) ) {
-				self::$instance = new Alpha_Blocks_Final();
+				self::$instance = new Simple_Carousel_Blocks_Final();
 			}
 			return self::$instance;
 		}
@@ -52,7 +52,7 @@ if ( ! class_exists( 'Alpha_Blocks_Final' ) ) :
 		 */
 		function __construct() {
 
-			$this->text_domain = 'Alpha';
+			$this->text_domain = 'simblock';
 			$this->set_constants();
 			$this->includes();
 		}
@@ -62,29 +62,29 @@ if ( ! class_exists( 'Alpha_Blocks_Final' ) ) :
 		 */
 		public function set_constants() {
 
-			if ( ! defined( 'ALPHA_VERSION' ) ) {
-				define( 'ALPHA_VERSION', '1.0.0' );
+			if ( ! defined( 'SIMBLOCK_VERSION' ) ) {
+				define( 'SIMBLOCK_VERSION', '1.0.0' );
 			}
-			if ( ! defined( 'ALPHA_DOMAIN' ) ) {
-				define( 'ALPHA_DOMAIN', 'alpha' );
+			if ( ! defined( 'SIMBLOCK_DOMAIN' ) ) {
+				define( 'SIMBLOCK_DOMAIN', 'simblock' );
 			}
-			if ( ! defined( 'ALPHA_NAME' ) ) {
-				define( 'ALPHA_NAME', 'Alpha Blocks' );
+			if ( ! defined( 'SIMBLOCK_NAME' ) ) {
+				define( 'SIMBLOCK_NAME', 'Simple Carousel Blocks' );
 			}
-			if ( ! defined( 'ALPHADIR' ) ) {
-				define( 'ALPHADIR', plugin_dir_path( __FILE__ ) );
+			if ( ! defined( 'SIMBLOCKDIR' ) ) {
+				define( 'SIMBLOCKDIR', plugin_dir_path( __FILE__ ) );
 			}
-			if ( ! defined( 'ALPHABASENAME' ) ) {
-				define( 'ALPHABASENAME', plugin_basename( __FILE__ ) );
+			if ( ! defined( 'SIMBLOCKBASENAME' ) ) {
+				define( 'SIMBLOCKBASENAME', plugin_basename( __FILE__ ) );
 			}
-			if ( ! defined( 'ALPHAURL' ) ) {
-				define( 'ALPHAURL', plugin_dir_url( __FILE__ ) );
+			if ( ! defined( 'SIMBLOCKURL' ) ) {
+				define( 'SIMBLOCKURL', plugin_dir_url( __FILE__ ) );
 			}
-			if ( ! defined( 'ALPHADEV' ) ) {
-				define( 'ALPHADEV', true );
+			if ( ! defined( 'SIMBLOCKDEV' ) ) {
+				define( 'SIMBLOCKDEV', true );
 			}
-			if ( ! defined( 'ALPHA_IMAGES' ) ) {
-				define( 'ALPHA_IMAGES', '_ALPHA_att' );
+			if ( ! defined( 'SIMBLOCK_IMAGES' ) ) {
+				define( 'SIMBLOCK_IMAGES', '_SIMBLOCK_att' );
 			}
 		}
 
@@ -93,14 +93,14 @@ if ( ! class_exists( 'Alpha_Blocks_Final' ) ) :
 		 */
 		public function includes() {
 
-			include_once dirname( ALPHA_PLUGIN_FILE ) . '/includes/functions.php';
+			include_once dirname( SIMBLOCK_PLUGIN_FILE ) . '/includes/functions.php';
 
 			spl_autoload_register(
 				function ( $class_name ) {
 
 					if ( false !== strpos( $class_name, $this->text_domain ) ) {
 
-						$classes_dir = realpath( plugin_dir_path( ALPHA_PLUGIN_FILE ) ) . DIRECTORY_SEPARATOR . 'includes' . DIRECTORY_SEPARATOR;
+						$classes_dir = realpath( plugin_dir_path( SIMBLOCK_PLUGIN_FILE ) ) . DIRECTORY_SEPARATOR . 'includes' . DIRECTORY_SEPARATOR;
 
 						$class_file = str_replace( '_', '-', strtolower( 'class-' . $class_name ) ) . '.php';
 						require_once $classes_dir . $class_file;
