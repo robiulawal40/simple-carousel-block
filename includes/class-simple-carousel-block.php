@@ -98,7 +98,7 @@ if ( ! class_exists( 'Simple_Carousel_Blocks_Final' ) ) :
 			spl_autoload_register(
 				function ( $class_name ) {
 
-					if ( false !== strpos( $class_name, $this->text_domain ) ) {
+					if ( false !== strpos( strtolower( $class_name ), strtolower( $this->text_domain ) ) ) {
 
 						$classes_dir = realpath( plugin_dir_path( SIMBLOCK_PLUGIN_FILE ) ) . DIRECTORY_SEPARATOR . 'includes' . DIRECTORY_SEPARATOR;
 

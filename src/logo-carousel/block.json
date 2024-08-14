@@ -1,12 +1,12 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "alpha/info-box",
+  "name": "simblock/logo-corousel",
   "version": "1.0.0",
-  "title": "Info Box",
+  "title": "Logo Carousel",
   "category": "widgets",
   "icon": "info outline",
-  "description": "The Info Box will create.",
+  "description": "The Logo Carousel will create.",
   "attributes": {
     "enableImageIcon": {
       "type": "boolean",
@@ -68,7 +68,7 @@
       }
     ]
   },
-  "textdomain": "alpha",
+  "textdomain": "simblock",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./admin-style.css",
   "style": "file:./style-index.css",

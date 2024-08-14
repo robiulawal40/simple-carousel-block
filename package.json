@@ -12,14 +12,14 @@
     "watch:tailwind": "tailwindcss -i ./src/style.css -o ./assets/style.css --watch --postcss --minify"
   },
   "scripts": {
-    "build": "npm-run-all --sequential build:wp build:tailwind",
-    "start": "npm-run-all --sequential \"wp-env start\" start:wp",
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "build:full": "npm-run-all --sequential build:wp build:tailwind",
+    "start:full": "npm-run-all --sequential \"wp-env start\" start:wp",
     "wp-env": "wp-env start",
     "dev": "npm-run-all --sequential \"wp-env start\" preview",
     "preview": "npm-run-all --parallel sync wpstart",
     "proxy:wp": "browser-sync start --config bs-config.js",
-    "build:wp": "wp-scripts build",
-    "start:wp": "wp-scripts start",
     "build:tailwind": "tailwindcss -i ./src/tailwind.css -o ./src/tailwind-build.css --postcss --minify",
     "watch:tailwind": "tailwindcss -i ./src/tailwind.css -o ./src/tailwind-build.css --watch --postcss",
     "watch:tailwind:logo-carousel": "tailwindcss -i ./src/logo-carousel/tailwind.css -o ./src/tailwind-logo-carousel.css --watch --postcss",

@@ -1,12 +1,12 @@
 <?php
-if ( ! class_exists( 'Alpha_I18n' ) ) :
+if ( ! class_exists( 'Simblock_I18n' ) ) :
 	/**
 	 * Define the internationalization functionality.
 	 *
 	 * Loads and defines the internationalization files for this plugin
 	 * so that it is ready for translation.
 	 */
-	class Alpha_I18n {
+	class Simblock_I18n {
 
 		/**
 		 * Include all action & hooks.

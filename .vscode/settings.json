@@ -1,5 +1,5 @@
 {
-  "cSpell.words": ["alpb", "CCOP", "CFEW", "tailwindcss"],
+  "cSpell.words": ["alpb", "CCOP", "CFEW", "Simblock", "tailwindcss"],
   "[php]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "valeryanm.vscode-phpsab"

@@ -2,9 +2,9 @@
 /**
  *
  * @wordpress-plugin
- * Plugin Name:         Simple Carousel Block
+ * Plugin Name:       Simple Carousel Block
  * Plugin URI:        https://github.com/robiulawal40/
- * Description:       This plugin will create bunch of blocks in your WordPress website.
+ * Description:       This plugin will carousel block in your WordPress website.
  * Version:           1.0.0
  * Author:            Robiul Awal
  * Author URI:        https://www.linkedin.com/company/wp-codezen
@@ -38,13 +38,9 @@ function Simple_Carousel_Block_init() {
 // add_action( 'plugins_loaded', 'Simple_Carousel_Block_init' );
 
 $GLOBALS['simblock'] = Simple_Carousel_Block_init();
-
-new Alpha_I18n();
-
+new Simblock_I18n();
 
 function simple_carousel_blocks_register_blocks() {
-	register_block_type( __DIR__ . '/build/info-box' );
-	// register_block_type( __DIR__ . '/build/accordion' );
-	// register_block_type( __DIR__ . '/build/icon' );
+	register_block_type( __DIR__ . '/build/logo-carousel' );
 }
 add_action( 'init', 'simple_carousel_blocks_register_blocks' );
