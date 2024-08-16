@@ -22,72 +22,13 @@
         Logo Carousel
       </div>
 
-      <div class="flex justify-center w-2/3 mx-auto mb-5">
-        <div
-          id="slider"
-          class="border-red-500 block relative"
-          style="--padding-x: 16px"
-        >
-          <!--Slides-->
-          <div
-            class="mx-auto grid grid-cols-3 gap-2 px-[var(--padding-x)] py-[var(--padding-x)] w-full font-[Raleway] bg-black *:bg-[#353535] [&_div]:p-4 [&_*]:text-slate-100 [&_div]:rounded-lg [&_div]:flex [&_div]:justify-center [&_div]:items-center"
-          >
-            <div class="h-[150px]">
-              <p class="text-style-1">Team</p>
-            </div>
-
-            <div class="">
-              <h3 class="h3-style-1">Most Experienced Team</h3>
-            </div>
-
-            <div class="">
-              <h3 class="h3-style-1">Most Experienced Team</h3>
-            </div>
-          </div>
-
-          <!--Arrow-->
-          <div
-            class="absolute px-[var(--padding-x)] top-1/2 -translate-y-1/2 w-full flex justify-between [&_div]:bg-[#333] [&_div]:cursor-pointer [&_div]:rounded-full [&_div]:text-gray-50 [&_div]:border [&_div]:border-gray-900 [&_div]:p-2 [&>*:first-child]:-translate-x-1/2 [&>*:last-child]:translate-x-1/2 [&_svg]:size-3"
-          >
-            <div>
-              <svg
-                stroke="currentColor"
-                fill="currentColor"
-                stroke-width="0"
-                viewBox="0 0 320 512"
-                height="200px"
-                width="200px"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
-                ></path>
-              </svg>
-            </div>
-            <div>
-              <svg
-                stroke="currentColor"
-                fill="currentColor"
-                stroke-width="0"
-                viewBox="0 0 320 512"
-                height="200px"
-                width="200px"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
-                ></path>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!-- Swiper -->
       <div
         class="flex justify-center w-2/3 mx-auto mb-16 text-lg font-bold underline underline-offset-8"
       >
-        <div class="slider block relative w-full p-4 bg-black border-red-500">
+        <div
+          class="slider-dark block relative w-full p-4 bg-black border-red-500"
+        >
           <div class="swiper h-28">
             <div
               class="swiper-wrapper flex [&_div]:bg-[#353535] [&_*]:text-[#666] [&_div]:rounded-lg [&_div]:flex [&_div]:justify-center [&_div]:items-center [&_svg]:max-w-full [&_svg]:max-h-[50%]"
@@ -237,54 +178,638 @@
         </div>
       </div>
       <!--End Swiper -->
+
+      <!-- Swiper 2 -->
+      <div
+        class="flex justify-center w-2/3 mx-auto mb-16 text-lg font-bold underline underline-offset-8"
+      >
+        <div
+          class="slider-light block relative w-full p-4 bg-[var(--bg-color)] border-red-500"
+          style="--bg-color: #ededed; --slider-bg: #fff"
+        >
+          <div class="swiper h-28">
+            <div
+              class="swiper-wrapper flex [&_div]:bg-[var(--slider-bg)] [&_*]:text-[#666] [&_div]:rounded-lg [&_div]:flex [&_div]:justify-center [&_div]:items-center [&_svg]:max-w-full [&_svg]:max-h-[50%]"
+            >
+              <div class="swiper-slide shadow-none">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  height="200px"
+                  width="200px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M436.9 296.8c2.8-12.5 4.2-25.4 4.2-38.7 0-99.7-82-180.6-183.2-180.6-10.7 0-21.1.9-31.3 2.6C210.3 69.9 191 64 170.2 64 111.6 64 64 110.9 64 168.7c0 19.4 5.3 37.5 14.6 53-2.4 11.7-3.7 23.9-3.7 36.3 0 99.8 82 180.6 183.1 180.6 11.5 0 22.7-1 33.5-3 15 7.9 32.1 12.4 50.2 12.4 58.7 0 106.2-46.9 106.2-104.7.1-16.7-3.9-32.5-11-46.5zm-85 47.5c-8.5 11.8-21 21.2-37.2 27.8-16.1 6.6-35.3 9.9-57.3 9.9-26.3 0-48.3-4.6-65.6-13.6-12.3-6.6-22.4-15.4-30.2-26.4-7.8-11-11.7-22-11.7-32.6 0-6.6 2.6-12.3 7.6-17.1 5-4.6 11.5-7 19.1-7 6.3 0 11.7 1.8 16.1 5.5 4.2 3.5 7.8 8.7 10.7 15.5 3.3 7.3 6.8 13.5 10.6 18.4 3.6 4.7 8.7 8.6 15.3 11.7 6.7 3.1 15.6 4.7 26.6 4.7 15.1 0 27.5-3.2 36.8-9.5 9.2-6.1 13.6-13.5 13.6-22.5 0-7.1-2.3-12.7-7.1-17.1-5-4.6-11.5-8.2-19.6-10.6-8.3-2.6-19.6-5.3-33.6-8.2-19-4-35.1-8.8-48-14.2-13.1-5.5-23.7-13.2-31.5-22.7-7.9-9.7-11.8-21.9-11.8-36.2 0-13.7 4.2-25.9 12.4-36.5 8.2-10.5 20.1-18.7 35.6-24.3 15.2-5.6 33.3-8.4 53.7-8.4 16.4 0 30.7 1.9 42.7 5.5 12.1 3.7 22.2 8.7 30.3 14.9 8 6.2 14 12.8 17.8 19.7 3.8 7 5.7 13.9 5.7 20.6 0 6.4-2.5 12.3-7.5 17.4-5 5.1-11.3 7.8-18.8 7.8-6.8 0-12.1-1.6-15.8-4.8-3.4-3-7-7.6-10.9-14.3-4.6-8.5-10.1-15.3-16.4-20.1-6.2-4.6-16.4-7-30.6-7-13.1 0-23.8 2.6-31.7 7.7-7.6 4.9-11.3 10.6-11.3 17.3 0 4.1 1.2 7.5 3.7 10.5 2.6 3.1 6.2 5.9 10.9 8.2 4.8 2.4 9.8 4.3 14.7 5.6 5.1 1.4 13.6 3.5 25.3 6.1 14.9 3.1 28.5 6.7 40.5 10.4 12.2 3.9 22.7 8.6 31.3 14.1 8.8 5.6 15.7 12.9 20.7 21.5 4.9 8.6 7.4 19.4 7.4 31.8.4 15.1-3.9 28.7-12.5 40.5z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  height="200px"
+                  width="200px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M352 64H160c-52.8 0-96 43.2-96 96v192c0 52.8 43.2 96 96 96h192c52.8 0 96-43.2 96-96V160c0-52.8-43.2-96-96-96zM184 304c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm144 0c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  height="200px"
+                  width="200px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M417.2 64H96.8C79.3 64 64 76.6 64 93.9V415c0 17.4 15.3 32.9 32.8 32.9h320.3c17.6 0 30.8-15.6 30.8-32.9V93.9C448 76.6 434.7 64 417.2 64zM183 384h-55V213h55v171zm-25.6-197h-.4c-17.6 0-29-13.1-29-29.5 0-16.7 11.7-29.5 29.7-29.5s29 12.7 29.4 29.5c0 16.4-11.4 29.5-29.7 29.5zM384 384h-55v-93.5c0-22.4-8-37.7-27.9-37.7-15.2 0-24.2 10.3-28.2 20.3-1.5 3.6-1.9 8.5-1.9 13.5V384h-55V213h55v23.8c8-11.4 20.5-27.8 49.6-27.8 36.1 0 63.4 23.8 63.4 75.1V384z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  height="200px"
+                  width="200px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M80 32l-32 80v304h96v64h64l64-64h80l112-112V32H80zm336 256l-64 64h-96.001L192 416v-64h-80V80h304v208z"
+                  ></path>
+                  <path d="M320 143h48v129h-48zM208 143h48v129h-48z"></path>
+                </svg>
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  height="200px"
+                  width="200px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M480 265H232v179l248 36V265zM216 265H32v150l184 26.7V265zM480 32L232 67.4V249h248V32zM216 69.7L32 96v153h184V69.7z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  height="200px"
+                  width="200px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m112.31 268 40.36-68.69 34.65 59-67.54 115h135L289.31 432H16zm58.57-99.76 33.27-56.67L392.44 432h-66.68zM222.67 80h66.59L496 432h-66.68z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                Resize me!
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                Resize me!
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                Resize me!
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                Resize me!
+              </div>
+            </div>
+          </div>
+
+          <!--Arrow-->
+          <div
+            class="absolute top-1/2 left-0 px-4 -translate-y-1/2 w-full flex justify-between [&_div]:bg-[#777] [&_div]:cursor-pointer [&_div]:rounded-lg [&_div]:text-gray-50 [&_div]:border [&_div]:border-[#888] [&_div]:p-2 [&>*:first-child]:-translate-x-1/2 [&>*:last-child]:translate-x-1/2 [&_svg]:size-3 border-red-500 z-10"
+          >
+            <div class="custom-navigation-prev hover:scale-110 duration-300">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 320 512"
+                height="200px"
+                width="200px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+                ></path>
+              </svg>
+            </div>
+            <div class="custom-navigation-next hover:scale-110 duration-300">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 320 512"
+                height="200px"
+                width="200px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End Swiper 2 -->
+
+      <!-- Swiper 3 -->
+
+      <div
+        class="flex flex-col justify-center w-2/3 mx-auto mb-16 text-lg font-bold underline underline-offset-8"
+      >
+        <h2 class="underline mb-4">Slider Rounded</h2>
+        <div
+          class="slider-rounded block relative w-full bg-[var(--bg-color)] border-red-500"
+          style="--bg-color: #ededed; --slider-bg: #fff"
+        >
+          <div class="swiper">
+            <div
+              class="swiper-wrapper flex [&_*]:text-[#666] [&>div]:p-3 [&>div>div]:p-5 [&_div]:flex [&_div]:justify-center [&_div]:items-center [&_svg]:max-w-full [&_svg]:max-h-full [&_svg]:size-20"
+            >
+              <div class="swiper-slide shadow-none">
+                <div
+                  class="flex rounded-full bg-gray-100 border-4 aspect-square"
+                >
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    height="200px"
+                    width="200px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M436.9 296.8c2.8-12.5 4.2-25.4 4.2-38.7 0-99.7-82-180.6-183.2-180.6-10.7 0-21.1.9-31.3 2.6C210.3 69.9 191 64 170.2 64 111.6 64 64 110.9 64 168.7c0 19.4 5.3 37.5 14.6 53-2.4 11.7-3.7 23.9-3.7 36.3 0 99.8 82 180.6 183.1 180.6 11.5 0 22.7-1 33.5-3 15 7.9 32.1 12.4 50.2 12.4 58.7 0 106.2-46.9 106.2-104.7.1-16.7-3.9-32.5-11-46.5zm-85 47.5c-8.5 11.8-21 21.2-37.2 27.8-16.1 6.6-35.3 9.9-57.3 9.9-26.3 0-48.3-4.6-65.6-13.6-12.3-6.6-22.4-15.4-30.2-26.4-7.8-11-11.7-22-11.7-32.6 0-6.6 2.6-12.3 7.6-17.1 5-4.6 11.5-7 19.1-7 6.3 0 11.7 1.8 16.1 5.5 4.2 3.5 7.8 8.7 10.7 15.5 3.3 7.3 6.8 13.5 10.6 18.4 3.6 4.7 8.7 8.6 15.3 11.7 6.7 3.1 15.6 4.7 26.6 4.7 15.1 0 27.5-3.2 36.8-9.5 9.2-6.1 13.6-13.5 13.6-22.5 0-7.1-2.3-12.7-7.1-17.1-5-4.6-11.5-8.2-19.6-10.6-8.3-2.6-19.6-5.3-33.6-8.2-19-4-35.1-8.8-48-14.2-13.1-5.5-23.7-13.2-31.5-22.7-7.9-9.7-11.8-21.9-11.8-36.2 0-13.7 4.2-25.9 12.4-36.5 8.2-10.5 20.1-18.7 35.6-24.3 15.2-5.6 33.3-8.4 53.7-8.4 16.4 0 30.7 1.9 42.7 5.5 12.1 3.7 22.2 8.7 30.3 14.9 8 6.2 14 12.8 17.8 19.7 3.8 7 5.7 13.9 5.7 20.6 0 6.4-2.5 12.3-7.5 17.4-5 5.1-11.3 7.8-18.8 7.8-6.8 0-12.1-1.6-15.8-4.8-3.4-3-7-7.6-10.9-14.3-4.6-8.5-10.1-15.3-16.4-20.1-6.2-4.6-16.4-7-30.6-7-13.1 0-23.8 2.6-31.7 7.7-7.6 4.9-11.3 10.6-11.3 17.3 0 4.1 1.2 7.5 3.7 10.5 2.6 3.1 6.2 5.9 10.9 8.2 4.8 2.4 9.8 4.3 14.7 5.6 5.1 1.4 13.6 3.5 25.3 6.1 14.9 3.1 28.5 6.7 40.5 10.4 12.2 3.9 22.7 8.6 31.3 14.1 8.8 5.6 15.7 12.9 20.7 21.5 4.9 8.6 7.4 19.4 7.4 31.8.4 15.1-3.9 28.7-12.5 40.5z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                <div
+                  class="flex rounded-full bg-gray-100 border-4 aspect-square"
+                >
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    height="200px"
+                    width="200px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M352 64H160c-52.8 0-96 43.2-96 96v192c0 52.8 43.2 96 96 96h192c52.8 0 96-43.2 96-96V160c0-52.8-43.2-96-96-96zM184 304c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm144 0c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                <div
+                  class="flex rounded-full bg-gray-100 border-4 aspect-square"
+                >
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    height="200px"
+                    width="200px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M417.2 64H96.8C79.3 64 64 76.6 64 93.9V415c0 17.4 15.3 32.9 32.8 32.9h320.3c17.6 0 30.8-15.6 30.8-32.9V93.9C448 76.6 434.7 64 417.2 64zM183 384h-55V213h55v171zm-25.6-197h-.4c-17.6 0-29-13.1-29-29.5 0-16.7 11.7-29.5 29.7-29.5s29 12.7 29.4 29.5c0 16.4-11.4 29.5-29.7 29.5zM384 384h-55v-93.5c0-22.4-8-37.7-27.9-37.7-15.2 0-24.2 10.3-28.2 20.3-1.5 3.6-1.9 8.5-1.9 13.5V384h-55V213h55v23.8c8-11.4 20.5-27.8 49.6-27.8 36.1 0 63.4 23.8 63.4 75.1V384z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                <div
+                  class="flex rounded-full bg-gray-100 border-4 aspect-square"
+                >
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    height="200px"
+                    width="200px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M80 32l-32 80v304h96v64h64l64-64h80l112-112V32H80zm336 256l-64 64h-96.001L192 416v-64h-80V80h304v208z"
+                    ></path>
+                    <path d="M320 143h48v129h-48zM208 143h48v129h-48z"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                <div
+                  class="flex rounded-full bg-gray-100 border-4 aspect-square"
+                >
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    height="200px"
+                    width="200px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M480 265H232v179l248 36V265zM216 265H32v150l184 26.7V265zM480 32L232 67.4V249h248V32zM216 69.7L32 96v153h184V69.7z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                <div
+                  class="flex rounded-full bg-gray-100 border-4 aspect-square"
+                >
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    height="200px"
+                    width="200px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="m112.31 268 40.36-68.69 34.65 59-67.54 115h135L289.31 432H16zm58.57-99.76 33.27-56.67L392.44 432h-66.68zM222.67 80h66.59L496 432h-66.68z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Arrow-->
+          <div
+            class="absolute top-1/2 left-0 px-4 -translate-y-1/2 w-full flex justify-between [&_div]:bg-[#777] [&_div]:cursor-pointer [&_div]:rounded-lg [&_div]:text-gray-50 [&_div]:border [&_div]:border-[#888] [&_div]:p-2 [&>*:first-child]:-translate-x-1/2 [&>*:last-child]:translate-x-1/2 [&_svg]:size-3 border-red-500 z-10"
+          >
+            <div class="custom-navigation-prev hover:scale-110 duration-300">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 320 512"
+                height="200px"
+                width="200px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+                ></path>
+              </svg>
+            </div>
+            <div class="custom-navigation-next hover:scale-110 duration-300">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 320 512"
+                height="200px"
+                width="200px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End Swiper 3 -->
+
+      <!-- Swiper 4 -->
+      <div
+        class="flex justify-center w-2/3 mx-auto mb-16 text-lg font-bold underline underline-offset-8"
+      >
+        <div
+          class="slider-square block relative w-full p-4 bg-[var(--bg-color)] border-red-500"
+          style="
+            --bg-color: transparent;
+            --slider-bg: transparent;
+            --swiper-pagination-bottom: -8px;
+          "
+        >
+          <div class="swiper h-28">
+            <div
+              class="swiper-wrapper flex [&_div]:bg-[var(--slider-bg)] [&_*]:text-[#666] [&_div]:rounded-lg [&_div]:flex [&_div]:justify-center [&_div]:items-center [&_svg]:max-w-full [&_svg]:max-h-[50%]"
+            >
+              <div class="swiper-slide shadow-none">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  height="200px"
+                  width="200px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M436.9 296.8c2.8-12.5 4.2-25.4 4.2-38.7 0-99.7-82-180.6-183.2-180.6-10.7 0-21.1.9-31.3 2.6C210.3 69.9 191 64 170.2 64 111.6 64 64 110.9 64 168.7c0 19.4 5.3 37.5 14.6 53-2.4 11.7-3.7 23.9-3.7 36.3 0 99.8 82 180.6 183.1 180.6 11.5 0 22.7-1 33.5-3 15 7.9 32.1 12.4 50.2 12.4 58.7 0 106.2-46.9 106.2-104.7.1-16.7-3.9-32.5-11-46.5zm-85 47.5c-8.5 11.8-21 21.2-37.2 27.8-16.1 6.6-35.3 9.9-57.3 9.9-26.3 0-48.3-4.6-65.6-13.6-12.3-6.6-22.4-15.4-30.2-26.4-7.8-11-11.7-22-11.7-32.6 0-6.6 2.6-12.3 7.6-17.1 5-4.6 11.5-7 19.1-7 6.3 0 11.7 1.8 16.1 5.5 4.2 3.5 7.8 8.7 10.7 15.5 3.3 7.3 6.8 13.5 10.6 18.4 3.6 4.7 8.7 8.6 15.3 11.7 6.7 3.1 15.6 4.7 26.6 4.7 15.1 0 27.5-3.2 36.8-9.5 9.2-6.1 13.6-13.5 13.6-22.5 0-7.1-2.3-12.7-7.1-17.1-5-4.6-11.5-8.2-19.6-10.6-8.3-2.6-19.6-5.3-33.6-8.2-19-4-35.1-8.8-48-14.2-13.1-5.5-23.7-13.2-31.5-22.7-7.9-9.7-11.8-21.9-11.8-36.2 0-13.7 4.2-25.9 12.4-36.5 8.2-10.5 20.1-18.7 35.6-24.3 15.2-5.6 33.3-8.4 53.7-8.4 16.4 0 30.7 1.9 42.7 5.5 12.1 3.7 22.2 8.7 30.3 14.9 8 6.2 14 12.8 17.8 19.7 3.8 7 5.7 13.9 5.7 20.6 0 6.4-2.5 12.3-7.5 17.4-5 5.1-11.3 7.8-18.8 7.8-6.8 0-12.1-1.6-15.8-4.8-3.4-3-7-7.6-10.9-14.3-4.6-8.5-10.1-15.3-16.4-20.1-6.2-4.6-16.4-7-30.6-7-13.1 0-23.8 2.6-31.7 7.7-7.6 4.9-11.3 10.6-11.3 17.3 0 4.1 1.2 7.5 3.7 10.5 2.6 3.1 6.2 5.9 10.9 8.2 4.8 2.4 9.8 4.3 14.7 5.6 5.1 1.4 13.6 3.5 25.3 6.1 14.9 3.1 28.5 6.7 40.5 10.4 12.2 3.9 22.7 8.6 31.3 14.1 8.8 5.6 15.7 12.9 20.7 21.5 4.9 8.6 7.4 19.4 7.4 31.8.4 15.1-3.9 28.7-12.5 40.5z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  height="200px"
+                  width="200px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M352 64H160c-52.8 0-96 43.2-96 96v192c0 52.8 43.2 96 96 96h192c52.8 0 96-43.2 96-96V160c0-52.8-43.2-96-96-96zM184 304c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm144 0c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  height="200px"
+                  width="200px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M417.2 64H96.8C79.3 64 64 76.6 64 93.9V415c0 17.4 15.3 32.9 32.8 32.9h320.3c17.6 0 30.8-15.6 30.8-32.9V93.9C448 76.6 434.7 64 417.2 64zM183 384h-55V213h55v171zm-25.6-197h-.4c-17.6 0-29-13.1-29-29.5 0-16.7 11.7-29.5 29.7-29.5s29 12.7 29.4 29.5c0 16.4-11.4 29.5-29.7 29.5zM384 384h-55v-93.5c0-22.4-8-37.7-27.9-37.7-15.2 0-24.2 10.3-28.2 20.3-1.5 3.6-1.9 8.5-1.9 13.5V384h-55V213h55v23.8c8-11.4 20.5-27.8 49.6-27.8 36.1 0 63.4 23.8 63.4 75.1V384z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  height="200px"
+                  width="200px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M80 32l-32 80v304h96v64h64l64-64h80l112-112V32H80zm336 256l-64 64h-96.001L192 416v-64h-80V80h304v208z"
+                  ></path>
+                  <path d="M320 143h48v129h-48zM208 143h48v129h-48z"></path>
+                </svg>
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  height="200px"
+                  width="200px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M480 265H232v179l248 36V265zM216 265H32v150l184 26.7V265zM480 32L232 67.4V249h248V32zM216 69.7L32 96v153h184V69.7z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  height="200px"
+                  width="200px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m112.31 268 40.36-68.69 34.65 59-67.54 115h135L289.31 432H16zm58.57-99.76 33.27-56.67L392.44 432h-66.68zM222.67 80h66.59L496 432h-66.68z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                Resize me!
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                Resize me!
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                Resize me!
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                Resize me!
+              </div>
+            </div>
+            <div class="swiper-pagination z-20 left-0"></div>
+          </div>
+
+          <!--Arrow-->
+          <div
+            class="absolute top-1/2 left-0 px-4 -translate-y-1/2 w-full flex justify-between [&_div]:bg-[transparent] text-gray-400 [&_div]:cursor-pointer [&_div]:rounded-lg [&_div]:text-gray-400 [&_div]:border-[tranparent] [&_div]:p-2 [&>*:first-child]:-translate-x-1/2 [&>*:last-child]:translate-x-1/2 [&_svg]:size-3 z-10"
+          >
+            <div class="custom-navigation-prev hover:scale-110 duration-300">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 320 512"
+                height="200px"
+                width="200px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+                ></path>
+              </svg>
+            </div>
+            <div class="custom-navigation-next hover:scale-110 duration-300">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 320 512"
+                height="200px"
+                width="200px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End Swiper 4 -->
+
+      <!-- Swiper 5 -->
+      <div
+        class="flex justify-center w-2/3 mx-auto mb-16 text-lg font-bold underline underline-offset-8"
+      >
+        <div
+          class="slider-square-bg block relative w-full p-4 pb-8 border-red-500"
+          style="
+            --swiper-pagination-bottom: -8px;
+            --slider-bg: #fff;
+            background-image: url(&quot;./slider-bg.jpg&quot;);
+            background-position: center;
+            background-repeat: no-repeat;
+          "
+        >
+          <div class="swiper">
+            <div
+              class="swiper-wrapper flex [&_div]:bg-[var(--slider-bg)] [&_*]:text-[#666] [&_div]:flex [&_div]:justify-center [&_div]:items-center [&_svg]:max-w-[80px] [&_svg]:max-h-[100px]"
+            >
+              <div class="swiper-slide shadow-none">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  height="200px"
+                  width="200px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M436.9 296.8c2.8-12.5 4.2-25.4 4.2-38.7 0-99.7-82-180.6-183.2-180.6-10.7 0-21.1.9-31.3 2.6C210.3 69.9 191 64 170.2 64 111.6 64 64 110.9 64 168.7c0 19.4 5.3 37.5 14.6 53-2.4 11.7-3.7 23.9-3.7 36.3 0 99.8 82 180.6 183.1 180.6 11.5 0 22.7-1 33.5-3 15 7.9 32.1 12.4 50.2 12.4 58.7 0 106.2-46.9 106.2-104.7.1-16.7-3.9-32.5-11-46.5zm-85 47.5c-8.5 11.8-21 21.2-37.2 27.8-16.1 6.6-35.3 9.9-57.3 9.9-26.3 0-48.3-4.6-65.6-13.6-12.3-6.6-22.4-15.4-30.2-26.4-7.8-11-11.7-22-11.7-32.6 0-6.6 2.6-12.3 7.6-17.1 5-4.6 11.5-7 19.1-7 6.3 0 11.7 1.8 16.1 5.5 4.2 3.5 7.8 8.7 10.7 15.5 3.3 7.3 6.8 13.5 10.6 18.4 3.6 4.7 8.7 8.6 15.3 11.7 6.7 3.1 15.6 4.7 26.6 4.7 15.1 0 27.5-3.2 36.8-9.5 9.2-6.1 13.6-13.5 13.6-22.5 0-7.1-2.3-12.7-7.1-17.1-5-4.6-11.5-8.2-19.6-10.6-8.3-2.6-19.6-5.3-33.6-8.2-19-4-35.1-8.8-48-14.2-13.1-5.5-23.7-13.2-31.5-22.7-7.9-9.7-11.8-21.9-11.8-36.2 0-13.7 4.2-25.9 12.4-36.5 8.2-10.5 20.1-18.7 35.6-24.3 15.2-5.6 33.3-8.4 53.7-8.4 16.4 0 30.7 1.9 42.7 5.5 12.1 3.7 22.2 8.7 30.3 14.9 8 6.2 14 12.8 17.8 19.7 3.8 7 5.7 13.9 5.7 20.6 0 6.4-2.5 12.3-7.5 17.4-5 5.1-11.3 7.8-18.8 7.8-6.8 0-12.1-1.6-15.8-4.8-3.4-3-7-7.6-10.9-14.3-4.6-8.5-10.1-15.3-16.4-20.1-6.2-4.6-16.4-7-30.6-7-13.1 0-23.8 2.6-31.7 7.7-7.6 4.9-11.3 10.6-11.3 17.3 0 4.1 1.2 7.5 3.7 10.5 2.6 3.1 6.2 5.9 10.9 8.2 4.8 2.4 9.8 4.3 14.7 5.6 5.1 1.4 13.6 3.5 25.3 6.1 14.9 3.1 28.5 6.7 40.5 10.4 12.2 3.9 22.7 8.6 31.3 14.1 8.8 5.6 15.7 12.9 20.7 21.5 4.9 8.6 7.4 19.4 7.4 31.8.4 15.1-3.9 28.7-12.5 40.5z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  height="200px"
+                  width="200px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M352 64H160c-52.8 0-96 43.2-96 96v192c0 52.8 43.2 96 96 96h192c52.8 0 96-43.2 96-96V160c0-52.8-43.2-96-96-96zM184 304c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm144 0c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  height="200px"
+                  width="200px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M417.2 64H96.8C79.3 64 64 76.6 64 93.9V415c0 17.4 15.3 32.9 32.8 32.9h320.3c17.6 0 30.8-15.6 30.8-32.9V93.9C448 76.6 434.7 64 417.2 64zM183 384h-55V213h55v171zm-25.6-197h-.4c-17.6 0-29-13.1-29-29.5 0-16.7 11.7-29.5 29.7-29.5s29 12.7 29.4 29.5c0 16.4-11.4 29.5-29.7 29.5zM384 384h-55v-93.5c0-22.4-8-37.7-27.9-37.7-15.2 0-24.2 10.3-28.2 20.3-1.5 3.6-1.9 8.5-1.9 13.5V384h-55V213h55v23.8c8-11.4 20.5-27.8 49.6-27.8 36.1 0 63.4 23.8 63.4 75.1V384z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  height="200px"
+                  width="200px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M80 32l-32 80v304h96v64h64l64-64h80l112-112V32H80zm336 256l-64 64h-96.001L192 416v-64h-80V80h304v208z"
+                  ></path>
+                  <path d="M320 143h48v129h-48zM208 143h48v129h-48z"></path>
+                </svg>
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  height="200px"
+                  width="200px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M480 265H232v179l248 36V265zM216 265H32v150l184 26.7V265zM480 32L232 67.4V249h248V32zM216 69.7L32 96v153h184V69.7z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  height="200px"
+                  width="200px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m112.31 268 40.36-68.69 34.65 59-67.54 115h135L289.31 432H16zm58.57-99.76 33.27-56.67L392.44 432h-66.68zM222.67 80h66.59L496 432h-66.68z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                Resize me!
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                Resize me!
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                Resize me!
+              </div>
+              <div class="swiper-slide [&>*]:max-w-full [&>*]:max-h-[50%]">
+                Resize me!
+              </div>
+            </div>
+          </div>
+
+          <!--Arrow-->
+          <div
+            class="absolute -bottom-0 left-0 px-4 w-full flex justify-between [&_div]:cursor-pointer [&_div]:rounded-lg [&_div]:text-gray-50 [&_div]:p-2 [&_svg]:size-3 border-red-500 z-10"
+          >
+            <div class="swiper-pagination z-20 left-0"></div>
+          </div>
+        </div>
+      </div>
+      <!--End Swiper 5 -->
     </div>
 
     <!-- Swiper JS -->
     <script src="package/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".swiper", {
-        slidesPerView: 3,
-        spaceBetween: 16,
-        loop: true,
-        speed: 300,
-        direction: getDirection(),
-        navigation: {
-          nextEl: ".custom-navigation-next",
-          prevEl: ".custom-navigation-prev",
-        },
-        on: {
-          resize: function () {
-            swiper.changeDirection(getDirection());
-          },
-        },
-        // Responsive breakpoints
-        breakpoints: {
-          // when window width is >= 320px
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-          },
-          // when window width is >= 480px
-          480: {
-            slidesPerView: 3,
-            spaceBetween: 16,
-          },
-          // when window width is >= 640px
-          640: {
-            slidesPerView: 4,
-            spaceBetween: 12,
-          },
-        },
-      });
-
-      function getDirection() {
-        var windowWidth = window.innerWidth;
-        var direction = window.innerWidth <= 479 ? "vertical" : "horizontal";
-
-        return direction;
-      }
-    </script>
+    <script src="./slider-init.js"></script>
   </body>
 </html>
