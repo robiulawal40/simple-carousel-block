@@ -41,6 +41,7 @@ $GLOBALS['simblock'] = Simple_Carousel_Block_init();
 new Simblock_I18n();
 
 function simple_carousel_blocks_register_blocks() {
-	register_block_type( __DIR__ . '/build/logo-carousel' );
+	//register_block_type( __DIR__ . '/build/logo-carousel' );
+	register_block_type( __DIR__ . '/build/logo-slider' );
 }
 add_action( 'init', 'simple_carousel_blocks_register_blocks' );
